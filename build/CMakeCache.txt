@@ -814,10 +814,10 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
-husky_development_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_development
+husky_development_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_development/husky_vel
 
 //Value Computed by CMake
-husky_development_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/husky_development
+husky_development_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/husky_development/husky_vel
 
 //The directory containing a CMake configuration file for ignition-cmake0.
 ignition-cmake0_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0
