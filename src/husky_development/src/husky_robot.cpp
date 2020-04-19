@@ -35,7 +35,7 @@ void odomPoseCallback(const nav_msgs::Odometry& odom)
 {
   ROS_INFO_STREAM("Position x: " << odom.pose.pose.position.x);
   ROS_INFO_STREAM("Position y: " << odom.pose.pose.position.y);
-  cout << " " << endl;-
+  cout << " " << endl;
   cout << " " << endl;
 
 }
