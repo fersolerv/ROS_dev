@@ -89,18 +89,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -134,6 +122,18 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -243,79 +243,49 @@ nav_msgs_generate_messages_eus/fast:
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_cpp: husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+tf_generate_messages_eus: husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/rule
 
-.PHONY : nav_msgs_generate_messages_cpp
+.PHONY : tf_generate_messages_eus
 
 # fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
+tf_generate_messages_eus/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/build.make husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
 
 # Convenience name for target.
-husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-tf2_msgs_generate_messages_nodejs: husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_eus: husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
-.PHONY : tf2_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_eus
 
 # fast build rule for target.
-tf2_msgs_generate_messages_nodejs/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
-.PHONY : tf2_msgs_generate_messages_nodejs/fast
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-tf2_msgs_generate_messages_py: husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+actionlib_msgs_generate_messages_cpp: husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : tf2_msgs_generate_messages_py
+.PHONY : actionlib_msgs_generate_messages_cpp
 
 # fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_eus: husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_eus
-
-# fast build rule for target.
-tf2_msgs_generate_messages_eus/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
-.PHONY : tf2_msgs_generate_messages_eus/fast
+actionlib_msgs_generate_messages_cpp/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 husky_development/husky_vel/CMakeFiles/tf_generate_messages_cpp.dir/rule:
@@ -408,154 +378,19 @@ actionlib_msgs_generate_messages_nodejs/fast:
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+tf_generate_messages_lisp: husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_eus: husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/rule
-
-.PHONY : tf_generate_messages_eus
-
-# fast build rule for target.
-tf_generate_messages_eus/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/build.make husky_development/husky_vel/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_cpp: husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/build.make husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/build.make husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
+tf_generate_messages_lisp/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/build.make husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
 
 # Convenience name for target.
 husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
@@ -573,64 +408,34 @@ roscpp_generate_messages_lisp/fast:
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
-husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/rule
+husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-tf_generate_messages_lisp: husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/rule
+tf2_msgs_generate_messages_eus: husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 
-.PHONY : tf_generate_messages_lisp
+.PHONY : tf2_msgs_generate_messages_eus
 
 # fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/build.make husky_development/husky_vel/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
+tf2_msgs_generate_messages_eus/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_py: husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_lisp: husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_lisp
 
 # fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make husky_development/husky_vel/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 husky_development/husky_vel/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
@@ -646,6 +451,81 @@ tf_generate_messages_nodejs: husky_development/husky_vel/CMakeFiles/tf_generate_
 tf_generate_messages_nodejs/fast:
 	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf_generate_messages_nodejs.dir/build.make husky_development/husky_vel/CMakeFiles/tf_generate_messages_nodejs.dir/build
 .PHONY : tf_generate_messages_nodejs/fast
+
+# Convenience name for target.
+husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_nodejs: husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+tf2_msgs_generate_messages_nodejs/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make husky_development/husky_vel/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/build.make husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/build.make husky_development/husky_vel/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 husky_development/husky_vel/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
@@ -857,6 +737,51 @@ tf2_msgs_generate_messages_cpp/fast:
 	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
+# Convenience name for target.
+husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_py: husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_lisp: husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_cpp: husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make husky_development/husky_vel/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
 src/husky_robot.o: src/husky_robot.cpp.o
 
 .PHONY : src/husky_robot.o
@@ -898,34 +823,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_eus"
-	@echo "... nav_msgs_generate_messages_cpp"
-	@echo "... tf2_msgs_generate_messages_nodejs"
-	@echo "... install/strip"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... tf_generate_messages_eus"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_lisp"
 	@echo "... tf_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... tf_generate_messages_nodejs"
+	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_py"
 	@echo "... install/local"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... rebuild_cache"
@@ -943,6 +859,10 @@ help:
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... install/strip"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... src/husky_robot.o"
 	@echo "... src/husky_robot.i"
 	@echo "... src/husky_robot.s"

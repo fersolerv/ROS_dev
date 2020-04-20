@@ -1,0 +1,8 @@
+prefix=/home/parallels/catkin_ws/install
+
+Name: husky_vel
+Description: Description of husky_vel
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lhusky_development
+Requires: geometry_msgs roscpp rospy std_msgs message_runtime nav_msgs tf

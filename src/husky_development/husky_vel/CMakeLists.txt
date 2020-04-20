@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(husky_development)
+project(husky_vel)
 
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
@@ -38,4 +38,4 @@ include_directories(
 
 add_executable(husky_robot src/husky_robot.cpp)
 target_link_libraries (husky_robot ${catkin_LIBRARIES})
-add_dependencies(husky_robot husky_development)
+add_dependencies(husky_robot husky_vel)

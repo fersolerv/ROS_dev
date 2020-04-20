@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_development/msg" TYPE FILE FILES "/home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyMsg.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_vel/msg" TYPE FILE FILES "/home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyMsg.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parallels/catkin_ws/build/husky_development/husky_vel/catkin_generated/installspace/husky_development.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parallels/catkin_ws/build/husky_development/husky_vel/catkin_generated/installspace/husky_vel.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_development/cmake" TYPE FILE FILES
-    "/home/parallels/catkin_ws/build/husky_development/husky_vel/catkin_generated/installspace/husky_developmentConfig.cmake"
-    "/home/parallels/catkin_ws/build/husky_development/husky_vel/catkin_generated/installspace/husky_developmentConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_vel/cmake" TYPE FILE FILES
+    "/home/parallels/catkin_ws/build/husky_development/husky_vel/catkin_generated/installspace/husky_velConfig.cmake"
+    "/home/parallels/catkin_ws/build/husky_development/husky_vel/catkin_generated/installspace/husky_velConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_development" TYPE FILE FILES "/home/parallels/catkin_ws/src/husky_development/husky_vel/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_vel" TYPE FILE FILES "/home/parallels/catkin_ws/src/husky_development/husky_vel/package.xml")
 endif()
 

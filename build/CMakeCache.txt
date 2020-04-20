@@ -819,6 +819,24 @@ husky_development_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_develo
 //Value Computed by CMake
 husky_development_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/husky_development/husky_vel
 
+//Value Computed by CMake
+husky_teleop_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_development/husky_teleop
+
+//Value Computed by CMake
+husky_teleop_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/husky_development/husky_teleop
+
+//Value Computed by CMake
+husky_teleop_key_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_development/husky_teleop
+
+//Value Computed by CMake
+husky_teleop_key_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/husky_development/husky_teleop
+
+//Value Computed by CMake
+husky_vel_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_development/husky_vel
+
+//Value Computed by CMake
+husky_vel_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/husky_development/husky_vel
+
 //The directory containing a CMake configuration file for ignition-cmake0.
 ignition-cmake0_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0
 
@@ -1329,7 +1347,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
