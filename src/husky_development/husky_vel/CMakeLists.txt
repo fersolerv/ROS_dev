@@ -13,7 +13,12 @@ find_package(catkin REQUIRED COMPONENTS
 
 add_message_files(
   FILES
-  HuskyMsg.msg
+  HuskyVelocity.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
 )
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
@@ -29,6 +34,7 @@ catkin_package(
     message_runtime
     nav_msgs
     tf
+  DEPENDS system_lib
 )
 
 include_directories(

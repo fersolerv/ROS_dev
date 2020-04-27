@@ -882,6 +882,12 @@ onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libsdformat.so
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
 
+//Value Computed by CMake
+ros_essentials_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/ros_essentials
+
+//Value Computed by CMake
+ros_essentials_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/ros_essentials
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
 
@@ -909,6 +915,9 @@ roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
+//The directory containing a CMake configuration file for rospp.
+rospp_DIR:PATH=rospp_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
 
@@ -917,6 +926,12 @@ rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for srd_msgs.
+srd_msgs_DIR:PATH=srd_msgs_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for std_messages.
+std_messages_DIR:PATH=std_messages_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
@@ -1010,6 +1025,18 @@ turtlebot3_teleop_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/t
 
 //Value Computed by CMake
 turtlebot3_teleop_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_teleop
+
+//Value Computed by CMake
+udemy_course_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/udemy_course
+
+//Value Computed by CMake
+udemy_course_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/udemy_course
+
+//Value Computed by CMake
+udemy_ros_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/udemy_ros
+
+//Value Computed by CMake
+udemy_ros_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/udemy_ros
 
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake
@@ -1347,7 +1374,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
