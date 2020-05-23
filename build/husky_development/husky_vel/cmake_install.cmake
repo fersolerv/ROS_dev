@@ -42,6 +42,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_vel/srv" TYPE FILE FILES "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_vel/cmake" TYPE FILE FILES "/home/parallels/catkin_ws/build/husky_development/husky_vel/catkin_generated/installspace/husky_vel-msg-paths.cmake")
 endif()
 

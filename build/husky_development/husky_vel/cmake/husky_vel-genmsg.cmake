@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "husky_vel: 1 messages, 0 services")
+message(STATUS "husky_vel: 1 messages, 1 services")
 
 set(MSG_I_FLAGS "-Ihusky_vel:/home/parallels/catkin_ws/src/husky_development/husky_vel/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_husky_vel_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "husky_vel" "/home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyVelocity.msg" ""
 )
 
+get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv" NAME_WE)
+add_custom_target(_husky_vel_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "husky_vel" "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -36,6 +41,12 @@ _generate_msg_cpp(husky_vel
 )
 
 ### Generating Services
+_generate_srv_cpp(husky_vel
+  "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/husky_vel
+)
 
 ### Generating Module File
 _generate_module_cpp(husky_vel
@@ -50,6 +61,8 @@ add_dependencies(husky_vel_generate_messages husky_vel_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyVelocity.msg" NAME_WE)
+add_dependencies(husky_vel_generate_messages_cpp _husky_vel_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv" NAME_WE)
 add_dependencies(husky_vel_generate_messages_cpp _husky_vel_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -69,6 +82,12 @@ _generate_msg_eus(husky_vel
 )
 
 ### Generating Services
+_generate_srv_eus(husky_vel
+  "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/husky_vel
+)
 
 ### Generating Module File
 _generate_module_eus(husky_vel
@@ -83,6 +102,8 @@ add_dependencies(husky_vel_generate_messages husky_vel_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyVelocity.msg" NAME_WE)
+add_dependencies(husky_vel_generate_messages_eus _husky_vel_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv" NAME_WE)
 add_dependencies(husky_vel_generate_messages_eus _husky_vel_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -102,6 +123,12 @@ _generate_msg_lisp(husky_vel
 )
 
 ### Generating Services
+_generate_srv_lisp(husky_vel
+  "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/husky_vel
+)
 
 ### Generating Module File
 _generate_module_lisp(husky_vel
@@ -116,6 +143,8 @@ add_dependencies(husky_vel_generate_messages husky_vel_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyVelocity.msg" NAME_WE)
+add_dependencies(husky_vel_generate_messages_lisp _husky_vel_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv" NAME_WE)
 add_dependencies(husky_vel_generate_messages_lisp _husky_vel_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -135,6 +164,12 @@ _generate_msg_nodejs(husky_vel
 )
 
 ### Generating Services
+_generate_srv_nodejs(husky_vel
+  "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/husky_vel
+)
 
 ### Generating Module File
 _generate_module_nodejs(husky_vel
@@ -149,6 +184,8 @@ add_dependencies(husky_vel_generate_messages husky_vel_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyVelocity.msg" NAME_WE)
+add_dependencies(husky_vel_generate_messages_nodejs _husky_vel_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv" NAME_WE)
 add_dependencies(husky_vel_generate_messages_nodejs _husky_vel_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -168,6 +205,12 @@ _generate_msg_py(husky_vel
 )
 
 ### Generating Services
+_generate_srv_py(husky_vel
+  "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/husky_vel
+)
 
 ### Generating Module File
 _generate_module_py(husky_vel
@@ -182,6 +225,8 @@ add_dependencies(husky_vel_generate_messages husky_vel_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyVelocity.msg" NAME_WE)
+add_dependencies(husky_vel_generate_messages_py _husky_vel_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv" NAME_WE)
 add_dependencies(husky_vel_generate_messages_py _husky_vel_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

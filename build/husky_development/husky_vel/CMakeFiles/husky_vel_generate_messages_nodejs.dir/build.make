@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/parallels/catkin_ws/build
 include husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_nodejs.dir/progress.make
 
 husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_nodejs: /home/parallels/catkin_ws/devel/share/gennodejs/ros/husky_vel/msg/HuskyVelocity.js
+husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_nodejs: /home/parallels/catkin_ws/devel/share/gennodejs/ros/husky_vel/srv/StopHusky.js
 
 
 /home/parallels/catkin_ws/devel/share/gennodejs/ros/husky_vel/msg/HuskyVelocity.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +62,14 @@ husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_nodejs: /home
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/parallels/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from husky_vel/HuskyVelocity.msg"
 	cd /home/parallels/catkin_ws/build/husky_development/husky_vel && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyVelocity.msg -Ihusky_vel:/home/parallels/catkin_ws/src/husky_development/husky_vel/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p husky_vel -o /home/parallels/catkin_ws/devel/share/gennodejs/ros/husky_vel/msg
 
+/home/parallels/catkin_ws/devel/share/gennodejs/ros/husky_vel/srv/StopHusky.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/parallels/catkin_ws/devel/share/gennodejs/ros/husky_vel/srv/StopHusky.js: /home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/parallels/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from husky_vel/StopHusky.srv"
+	cd /home/parallels/catkin_ws/build/husky_development/husky_vel && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv -Ihusky_vel:/home/parallels/catkin_ws/src/husky_development/husky_vel/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p husky_vel -o /home/parallels/catkin_ws/devel/share/gennodejs/ros/husky_vel/srv
+
 husky_vel_generate_messages_nodejs: husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_nodejs
 husky_vel_generate_messages_nodejs: /home/parallels/catkin_ws/devel/share/gennodejs/ros/husky_vel/msg/HuskyVelocity.js
+husky_vel_generate_messages_nodejs: /home/parallels/catkin_ws/devel/share/gennodejs/ros/husky_vel/srv/StopHusky.js
 husky_vel_generate_messages_nodejs: husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_nodejs.dir/build.make
 
 .PHONY : husky_vel_generate_messages_nodejs

@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/parallels/catkin_ws/build
 include husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_cpp.dir/progress.make
 
 husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_cpp: /home/parallels/catkin_ws/devel/include/husky_vel/HuskyVelocity.h
+husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_cpp: /home/parallels/catkin_ws/devel/include/husky_vel/StopHusky.h
 
 
 /home/parallels/catkin_ws/devel/include/husky_vel/HuskyVelocity.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
@@ -62,8 +63,16 @@ husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_cpp: /home/pa
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/parallels/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from husky_vel/HuskyVelocity.msg"
 	cd /home/parallels/catkin_ws/src/husky_development/husky_vel && /home/parallels/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyVelocity.msg -Ihusky_vel:/home/parallels/catkin_ws/src/husky_development/husky_vel/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p husky_vel -o /home/parallels/catkin_ws/devel/include/husky_vel -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/parallels/catkin_ws/devel/include/husky_vel/StopHusky.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/parallels/catkin_ws/devel/include/husky_vel/StopHusky.h: /home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv
+/home/parallels/catkin_ws/devel/include/husky_vel/StopHusky.h: /opt/ros/melodic/share/gencpp/msg.h.template
+/home/parallels/catkin_ws/devel/include/husky_vel/StopHusky.h: /opt/ros/melodic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/parallels/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from husky_vel/StopHusky.srv"
+	cd /home/parallels/catkin_ws/src/husky_development/husky_vel && /home/parallels/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv -Ihusky_vel:/home/parallels/catkin_ws/src/husky_development/husky_vel/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p husky_vel -o /home/parallels/catkin_ws/devel/include/husky_vel -e /opt/ros/melodic/share/gencpp/cmake/..
+
 husky_vel_generate_messages_cpp: husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_cpp
 husky_vel_generate_messages_cpp: /home/parallels/catkin_ws/devel/include/husky_vel/HuskyVelocity.h
+husky_vel_generate_messages_cpp: /home/parallels/catkin_ws/devel/include/husky_vel/StopHusky.h
 husky_vel_generate_messages_cpp: husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_cpp.dir/build.make
 
 .PHONY : husky_vel_generate_messages_cpp

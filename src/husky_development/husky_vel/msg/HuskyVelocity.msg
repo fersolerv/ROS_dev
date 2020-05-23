@@ -1,2 +1,2 @@
-float32 linearVelocity
-float32 angularVelocity
+float32 linearVelocityX
+float32 angularVelocityZ

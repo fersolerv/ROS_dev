@@ -24,22 +24,22 @@ struct HuskyVelocity_
   typedef HuskyVelocity_<ContainerAllocator> Type;
 
   HuskyVelocity_()
-    : linearVelocity(0.0)
-    , angularVelocity(0.0)  {
+    : linearVelocityX(0.0)
+    , angularVelocityZ(0.0)  {
     }
   HuskyVelocity_(const ContainerAllocator& _alloc)
-    : linearVelocity(0.0)
-    , angularVelocity(0.0)  {
+    : linearVelocityX(0.0)
+    , angularVelocityZ(0.0)  {
   (void)_alloc;
     }
 
 
 
-   typedef float _linearVelocity_type;
-  _linearVelocity_type linearVelocity;
+   typedef float _linearVelocityX_type;
+  _linearVelocityX_type linearVelocityX;
 
-   typedef float _angularVelocity_type;
-  _angularVelocity_type angularVelocity;
+   typedef float _angularVelocityZ_type;
+  _angularVelocityZ_type angularVelocityZ;
 
 
 
@@ -70,8 +70,8 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::husky_vel::HuskyVelocity_<ContainerAllocator1> & lhs, const ::husky_vel::HuskyVelocity_<ContainerAllocator2> & rhs)
 {
-  return lhs.linearVelocity == rhs.linearVelocity &&
-    lhs.angularVelocity == rhs.angularVelocity;
+  return lhs.linearVelocityX == rhs.linearVelocityX &&
+    lhs.angularVelocityZ == rhs.angularVelocityZ;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -128,12 +128,12 @@ struct MD5Sum< ::husky_vel::HuskyVelocity_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "352405445bc14611a0dc96feba55c2c2";
+    return "3810a70d8bd9757d7145a2f9707db9e0";
   }
 
   static const char* value(const ::husky_vel::HuskyVelocity_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x352405445bc14611ULL;
-  static const uint64_t static_value2 = 0xa0dc96feba55c2c2ULL;
+  static const uint64_t static_value1 = 0x3810a70d8bd9757dULL;
+  static const uint64_t static_value2 = 0x7145a2f9707db9e0ULL;
 };
 
 template<class ContainerAllocator>
@@ -152,8 +152,8 @@ struct Definition< ::husky_vel::HuskyVelocity_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "float32 linearVelocity\n"
-"float32 angularVelocity\n"
+    return "float32 linearVelocityX\n"
+"float32 angularVelocityZ\n"
 ;
   }
 
@@ -172,8 +172,8 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
-      stream.next(m.linearVelocity);
-      stream.next(m.angularVelocity);
+      stream.next(m.linearVelocityX);
+      stream.next(m.angularVelocityZ);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -192,10 +192,10 @@ struct Printer< ::husky_vel::HuskyVelocity_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::husky_vel::HuskyVelocity_<ContainerAllocator>& v)
   {
-    s << indent << "linearVelocity: ";
-    Printer<float>::stream(s, indent + "  ", v.linearVelocity);
-    s << indent << "angularVelocity: ";
-    Printer<float>::stream(s, indent + "  ", v.angularVelocity);
+    s << indent << "linearVelocityX: ";
+    Printer<float>::stream(s, indent + "  ", v.linearVelocityX);
+    s << indent << "angularVelocityZ: ";
+    Printer<float>::stream(s, indent + "  ", v.angularVelocityZ);
   }
 };
 

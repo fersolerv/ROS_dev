@@ -1,8 +1,0 @@
-prefix=/home/parallels/catkin_ws/devel
-
-Name: udemy_course
-Description: Description of udemy_course
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -961,6 +961,19 @@ husky_vel_genlisp/fast:
 .PHONY : husky_vel_genlisp/fast
 
 #=============================================================================
+# Target rules for targets named husky_vel_geneus
+
+# Build rule for target.
+husky_vel_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 husky_vel_geneus
+.PHONY : husky_vel_geneus
+
+# fast build rule for target.
+husky_vel_geneus/fast:
+	$(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_vel_geneus.dir/build.make husky_development/husky_vel/CMakeFiles/husky_vel_geneus.dir/build
+.PHONY : husky_vel_geneus/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
 
 # Build rule for target.
@@ -1260,19 +1273,6 @@ husky_vel_generate_messages_cpp/fast:
 .PHONY : husky_vel_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named husky_vel_geneus
-
-# Build rule for target.
-husky_vel_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 husky_vel_geneus
-.PHONY : husky_vel_geneus
-
-# fast build rule for target.
-husky_vel_geneus/fast:
-	$(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_vel_geneus.dir/build.make husky_development/husky_vel/CMakeFiles/husky_vel_geneus.dir/build
-.PHONY : husky_vel_geneus/fast
-
-#=============================================================================
 # Target rules for targets named actionlib_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -1310,6 +1310,19 @@ actionlib_msgs_generate_messages_py: cmake_check_build_system
 actionlib_msgs_generate_messages_py/fast:
 	$(MAKE) -f husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make husky_development/husky_vel/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 .PHONY : actionlib_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _husky_vel_generate_messages_check_deps_StopHusky
+
+# Build rule for target.
+_husky_vel_generate_messages_check_deps_StopHusky: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _husky_vel_generate_messages_check_deps_StopHusky
+.PHONY : _husky_vel_generate_messages_check_deps_StopHusky
+
+# fast build rule for target.
+_husky_vel_generate_messages_check_deps_StopHusky/fast:
+	$(MAKE) -f husky_development/husky_vel/CMakeFiles/_husky_vel_generate_messages_check_deps_StopHusky.dir/build.make husky_development/husky_vel/CMakeFiles/_husky_vel_generate_messages_check_deps_StopHusky.dir/build
+.PHONY : _husky_vel_generate_messages_check_deps_StopHusky/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_py
@@ -2256,6 +2269,7 @@ help:
 	@echo "... husky_vel_generate_messages_py"
 	@echo "... husky_vel_gennodejs"
 	@echo "... husky_vel_genlisp"
+	@echo "... husky_vel_geneus"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_lisp"
@@ -2279,10 +2293,10 @@ help:
 	@echo "... husky_vel_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... husky_vel_generate_messages_cpp"
-	@echo "... husky_vel_geneus"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... _husky_vel_generate_messages_check_deps_StopHusky"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... husky_vel_generate_messages_nodejs"

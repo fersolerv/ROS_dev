@@ -18,31 +18,31 @@ class HuskyVelocity {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
-      this.linearVelocity = null;
-      this.angularVelocity = null;
+      this.linearVelocityX = null;
+      this.angularVelocityZ = null;
     }
     else {
-      if (initObj.hasOwnProperty('linearVelocity')) {
-        this.linearVelocity = initObj.linearVelocity
+      if (initObj.hasOwnProperty('linearVelocityX')) {
+        this.linearVelocityX = initObj.linearVelocityX
       }
       else {
-        this.linearVelocity = 0.0;
+        this.linearVelocityX = 0.0;
       }
-      if (initObj.hasOwnProperty('angularVelocity')) {
-        this.angularVelocity = initObj.angularVelocity
+      if (initObj.hasOwnProperty('angularVelocityZ')) {
+        this.angularVelocityZ = initObj.angularVelocityZ
       }
       else {
-        this.angularVelocity = 0.0;
+        this.angularVelocityZ = 0.0;
       }
     }
   }
 
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type HuskyVelocity
-    // Serialize message field [linearVelocity]
-    bufferOffset = _serializer.float32(obj.linearVelocity, buffer, bufferOffset);
-    // Serialize message field [angularVelocity]
-    bufferOffset = _serializer.float32(obj.angularVelocity, buffer, bufferOffset);
+    // Serialize message field [linearVelocityX]
+    bufferOffset = _serializer.float32(obj.linearVelocityX, buffer, bufferOffset);
+    // Serialize message field [angularVelocityZ]
+    bufferOffset = _serializer.float32(obj.angularVelocityZ, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -50,10 +50,10 @@ class HuskyVelocity {
     //deserializes a message object of type HuskyVelocity
     let len;
     let data = new HuskyVelocity(null);
-    // Deserialize message field [linearVelocity]
-    data.linearVelocity = _deserializer.float32(buffer, bufferOffset);
-    // Deserialize message field [angularVelocity]
-    data.angularVelocity = _deserializer.float32(buffer, bufferOffset);
+    // Deserialize message field [linearVelocityX]
+    data.linearVelocityX = _deserializer.float32(buffer, bufferOffset);
+    // Deserialize message field [angularVelocityZ]
+    data.angularVelocityZ = _deserializer.float32(buffer, bufferOffset);
     return data;
   }
 
@@ -68,14 +68,14 @@ class HuskyVelocity {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '352405445bc14611a0dc96feba55c2c2';
+    return '3810a70d8bd9757d7145a2f9707db9e0';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    float32 linearVelocity
-    float32 angularVelocity
+    float32 linearVelocityX
+    float32 angularVelocityZ
     
     `;
   }
@@ -86,18 +86,18 @@ class HuskyVelocity {
       msg = {};
     }
     const resolved = new HuskyVelocity(null);
-    if (msg.linearVelocity !== undefined) {
-      resolved.linearVelocity = msg.linearVelocity;
+    if (msg.linearVelocityX !== undefined) {
+      resolved.linearVelocityX = msg.linearVelocityX;
     }
     else {
-      resolved.linearVelocity = 0.0
+      resolved.linearVelocityX = 0.0
     }
 
-    if (msg.angularVelocity !== undefined) {
-      resolved.angularVelocity = msg.angularVelocity;
+    if (msg.angularVelocityZ !== undefined) {
+      resolved.angularVelocityZ = msg.angularVelocityZ;
     }
     else {
-      resolved.angularVelocity = 0.0
+      resolved.angularVelocityZ = 0.0
     }
 
     return resolved;

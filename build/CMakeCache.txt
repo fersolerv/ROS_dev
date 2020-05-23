@@ -814,18 +814,6 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
-husky_development_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_development/husky_vel
-
-//Value Computed by CMake
-husky_development_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/husky_development/husky_vel
-
-//Value Computed by CMake
-husky_teleop_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_development/husky_teleop
-
-//Value Computed by CMake
-husky_teleop_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/husky_development/husky_teleop
-
-//Value Computed by CMake
 husky_teleop_key_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_development/husky_teleop
 
 //Value Computed by CMake
@@ -915,9 +903,6 @@ roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
-//The directory containing a CMake configuration file for rospp.
-rospp_DIR:PATH=rospp_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
 
@@ -926,12 +911,6 @@ rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
-
-//The directory containing a CMake configuration file for srd_msgs.
-srd_msgs_DIR:PATH=srd_msgs_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for std_messages.
-std_messages_DIR:PATH=std_messages_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
@@ -1025,18 +1004,6 @@ turtlebot3_teleop_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/t
 
 //Value Computed by CMake
 turtlebot3_teleop_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_teleop
-
-//Value Computed by CMake
-udemy_course_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/udemy_course
-
-//Value Computed by CMake
-udemy_course_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/udemy_course
-
-//Value Computed by CMake
-udemy_ros_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/udemy_ros
-
-//Value Computed by CMake
-udemy_ros_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/udemy_ros
 
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake

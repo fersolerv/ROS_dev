@@ -16,6 +16,11 @@ add_message_files(
   HuskyVelocity.msg
 )
 
+add_service_files(
+  FILES
+  StopHusky.srv
+)
+
 generate_messages(
   DEPENDENCIES
   std_msgs

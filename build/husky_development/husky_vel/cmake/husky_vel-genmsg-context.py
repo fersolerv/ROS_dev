@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/parallels/catkin_ws/src/husky_development/husky_vel/msg/HuskyVelocity.msg"
-services_str = ""
+services_str = "/home/parallels/catkin_ws/src/husky_development/husky_vel/srv/StopHusky.srv"
 pkg_name = "husky_vel"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

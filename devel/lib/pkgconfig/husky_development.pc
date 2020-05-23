@@ -1,8 +1,0 @@
-prefix=/home/parallels/catkin_ws/devel
-
-Name: husky_development
-Description: Description of husky_development
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib -lhusky_development
-Requires: geometry_msgs roscpp rospy std_msgs message_runtime nav_msgs tf

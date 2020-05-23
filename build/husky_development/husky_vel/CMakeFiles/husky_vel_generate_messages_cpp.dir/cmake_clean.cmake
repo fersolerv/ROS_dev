@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/husky_vel_generate_messages_cpp"
   "/home/parallels/catkin_ws/devel/include/husky_vel/HuskyVelocity.h"
+  "/home/parallels/catkin_ws/devel/include/husky_vel/StopHusky.h"
 )
 
 # Per-language clean rules from dependency scanning.
