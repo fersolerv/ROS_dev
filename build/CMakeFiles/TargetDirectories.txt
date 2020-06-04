@@ -138,6 +138,7 @@
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages.dir
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/install/local.dir
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+/home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/husky_move.dir
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/sensor_msgs_generate_messages_eus.dir
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/tf_generate_messages_cpp.dir
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
@@ -174,7 +175,6 @@
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/_husky_vel_generate_messages_check_deps_HuskyVelocity.dir
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/tf2_msgs_generate_messages_cpp.dir
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/husky_vel_gencpp.dir
-/home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/husky_robot.dir
 /home/parallels/catkin_ws/build/husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_eus.dir
 /home/parallels/catkin_ws/build/turtlebot3/turtlebot3_bringup/CMakeFiles/install.dir
 /home/parallels/catkin_ws/build/turtlebot3/turtlebot3_bringup/CMakeFiles/list_install_components.dir

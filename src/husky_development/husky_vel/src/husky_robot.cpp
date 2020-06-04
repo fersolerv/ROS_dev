@@ -15,17 +15,22 @@ int main(int argc, char **argv)
   odom_sub = husky.subscribe("/husky_velocity_controller/odom", 10, odomPoseCallback);
 
   // Linear velocities
-  double speed = 0.5;
-  double distance = 8;
-  bool isFoward = 1;
+  auto speed = 0.5;
+  auto distance = 8;
+  auto isFoward = true;
 
   // Angular velocities
-  double angular_speed = 30.0;
-  double angle = 90.0;
-  bool clockwise = 0;
+  auto angular_speed = 30.0;
+  auto angle = 90.0;
+  auto clockwise = 0;
 
   husky_cmd->move(speed, distance, isFoward);
   husky_cmd->rotate(husky_cmd->degrees2radians(angular_speed), husky_cmd->degrees2radians(angle), clockwise);
+  husky_cmd->move(speed, distance, isFoward);
+  husky_cmd->rotate(husky_cmd->degrees2radians(angular_speed), husky_cmd->degrees2radians(angle), clockwise);
+  husky_cmd->move(speed, distance, isFoward);
+  husky_cmd->rotate(husky_cmd->degrees2radians(angular_speed), husky_cmd->degrees2radians(angle), clockwise);
+  husky_cmd->move(speed, distance, isFoward);
 
   return 0;
 }

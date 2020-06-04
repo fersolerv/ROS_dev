@@ -1039,6 +1039,19 @@ sensor_msgs_generate_messages_lisp/fast:
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named husky_move
+
+# Build rule for target.
+husky_move: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 husky_move
+.PHONY : husky_move
+
+# fast build rule for target.
+husky_move/fast:
+	$(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_move.dir/build.make husky_development/husky_vel/CMakeFiles/husky_move.dir/build
+.PHONY : husky_move/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -1453,19 +1466,6 @@ husky_vel_gencpp: cmake_check_build_system
 husky_vel_gencpp/fast:
 	$(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_vel_gencpp.dir/build.make husky_development/husky_vel/CMakeFiles/husky_vel_gencpp.dir/build
 .PHONY : husky_vel_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named husky_robot
-
-# Build rule for target.
-husky_robot: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 husky_robot
-.PHONY : husky_robot
-
-# fast build rule for target.
-husky_robot/fast:
-	$(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_robot.dir/build.make husky_development/husky_vel/CMakeFiles/husky_robot.dir/build
-.PHONY : husky_robot/fast
 
 #=============================================================================
 # Target rules for targets named husky_vel_generate_messages_eus
@@ -2275,6 +2275,7 @@ help:
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... husky_vel_generate_messages"
 	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... husky_move"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_cpp"
@@ -2307,7 +2308,6 @@ help:
 	@echo "... _husky_vel_generate_messages_check_deps_HuskyVelocity"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... husky_vel_gencpp"
-	@echo "... husky_robot"
 	@echo "... husky_vel_generate_messages_eus"
 	@echo "... diagnostic_msgs_generate_messages_eus"
 	@echo "... diagnostic_msgs_generate_messages_cpp"

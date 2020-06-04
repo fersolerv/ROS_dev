@@ -318,6 +318,21 @@ sensor_msgs_generate_messages_lisp/fast:
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+husky_development/husky_vel/CMakeFiles/husky_move.dir/rule:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/husky_move.dir/rule
+.PHONY : husky_development/husky_vel/CMakeFiles/husky_move.dir/rule
+
+# Convenience name for target.
+husky_move: husky_development/husky_vel/CMakeFiles/husky_move.dir/rule
+
+.PHONY : husky_move
+
+# fast build rule for target.
+husky_move/fast:
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_move.dir/build.make husky_development/husky_vel/CMakeFiles/husky_move.dir/build
+.PHONY : husky_move/fast
+
+# Convenience name for target.
 husky_development/husky_vel/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
 	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : husky_development/husky_vel/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
@@ -798,21 +813,6 @@ husky_vel_gencpp/fast:
 .PHONY : husky_vel_gencpp/fast
 
 # Convenience name for target.
-husky_development/husky_vel/CMakeFiles/husky_robot.dir/rule:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/husky_robot.dir/rule
-.PHONY : husky_development/husky_vel/CMakeFiles/husky_robot.dir/rule
-
-# Convenience name for target.
-husky_robot: husky_development/husky_vel/CMakeFiles/husky_robot.dir/rule
-
-.PHONY : husky_robot
-
-# fast build rule for target.
-husky_robot/fast:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_robot.dir/build.make husky_development/husky_vel/CMakeFiles/husky_robot.dir/build
-.PHONY : husky_robot/fast
-
-# Convenience name for target.
 husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_eus.dir/rule:
 	cd /home/parallels/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_eus.dir/rule
 .PHONY : husky_development/husky_vel/CMakeFiles/husky_vel_generate_messages_eus.dir/rule
@@ -833,7 +833,7 @@ src/husky_robot.o: src/husky_robot.cpp.o
 
 # target to build an object file
 src/husky_robot.cpp.o:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_robot.dir/build.make husky_development/husky_vel/CMakeFiles/husky_robot.dir/src/husky_robot.cpp.o
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_move.dir/build.make husky_development/husky_vel/CMakeFiles/husky_move.dir/src/husky_robot.cpp.o
 .PHONY : src/husky_robot.cpp.o
 
 src/husky_robot.i: src/husky_robot.cpp.i
@@ -842,7 +842,7 @@ src/husky_robot.i: src/husky_robot.cpp.i
 
 # target to preprocess a source file
 src/husky_robot.cpp.i:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_robot.dir/build.make husky_development/husky_vel/CMakeFiles/husky_robot.dir/src/husky_robot.cpp.i
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_move.dir/build.make husky_development/husky_vel/CMakeFiles/husky_move.dir/src/husky_robot.cpp.i
 .PHONY : src/husky_robot.cpp.i
 
 src/husky_robot.s: src/husky_robot.cpp.s
@@ -851,7 +851,7 @@ src/husky_robot.s: src/husky_robot.cpp.s
 
 # target to generate assembly for a file
 src/husky_robot.cpp.s:
-	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_robot.dir/build.make husky_development/husky_vel/CMakeFiles/husky_robot.dir/src/husky_robot.cpp.s
+	cd /home/parallels/catkin_ws/build && $(MAKE) -f husky_development/husky_vel/CMakeFiles/husky_move.dir/build.make husky_development/husky_vel/CMakeFiles/husky_move.dir/src/husky_robot.cpp.s
 .PHONY : src/husky_robot.cpp.s
 
 # Help Target
@@ -873,6 +873,7 @@ help:
 	@echo "... husky_vel_generate_messages"
 	@echo "... install/local"
 	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... husky_move"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_cpp"
@@ -909,7 +910,6 @@ help:
 	@echo "... _husky_vel_generate_messages_check_deps_HuskyVelocity"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... husky_vel_gencpp"
-	@echo "... husky_robot"
 	@echo "... husky_vel_generate_messages_eus"
 	@echo "... src/husky_robot.o"
 	@echo "... src/husky_robot.i"
