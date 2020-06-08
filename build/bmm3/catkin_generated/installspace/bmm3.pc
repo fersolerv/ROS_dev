@@ -1,0 +1,8 @@
+prefix=/home/parallels/catkin_ws/install
+
+Name: bmm3
+Description: Description of bmm3
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
