@@ -9,7 +9,7 @@ import struct
 class AddTwoIntsRequest(genpy.Message):
   _md5sum = "36d09b846be0b371c5f190354dd3153e"
   _type = "ros_essentials/AddTwoIntsRequest"
-  _has_header = False #flag to mark the presence of a Header object
+  _has_header = False  # flag to mark the presence of a Header object
   _full_text = """int64 a
 int64 b
 """
@@ -32,7 +32,7 @@ int64 b
     """
     if args or kwds:
       super(AddTwoIntsRequest, self).__init__(*args, **kwds)
-      #message fields cannot be None, assign default values for those that are
+      # message fields cannot be None, assign default values for those that are
       if self.a is None:
         self.a = 0
       if self.b is None:
@@ -71,7 +71,7 @@ int64 b
       (_x.a, _x.b,) = _get_struct_2q().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 
   def serialize_numpy(self, buff, numpy):
@@ -100,7 +100,7 @@ int64 b
       (_x.a, _x.b,) = _get_struct_2q().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 _struct_I = genpy.struct_I
 def _get_struct_I():
@@ -123,7 +123,7 @@ import struct
 class AddTwoIntsResponse(genpy.Message):
   _md5sum = "b88405221c77b1878a3cbbfff53428d7"
   _type = "ros_essentials/AddTwoIntsResponse"
-  _has_header = False #flag to mark the presence of a Header object
+  _has_header = False  # flag to mark the presence of a Header object
   _full_text = """int64 sum
 """
   __slots__ = ['sum']
@@ -145,7 +145,7 @@ class AddTwoIntsResponse(genpy.Message):
     """
     if args or kwds:
       super(AddTwoIntsResponse, self).__init__(*args, **kwds)
-      #message fields cannot be None, assign default values for those that are
+      # message fields cannot be None, assign default values for those that are
       if self.sum is None:
         self.sum = 0
     else:
@@ -163,7 +163,8 @@ class AddTwoIntsResponse(genpy.Message):
     :param buff: buffer, ``StringIO``
     """
     try:
-      buff.write(_get_struct_q().pack(self.sum))
+      _x = self.sum
+      buff.write(_get_struct_q().pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -179,7 +180,7 @@ class AddTwoIntsResponse(genpy.Message):
       (self.sum,) = _get_struct_q().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 
   def serialize_numpy(self, buff, numpy):
@@ -189,7 +190,8 @@ class AddTwoIntsResponse(genpy.Message):
     :param numpy: numpy python module
     """
     try:
-      buff.write(_get_struct_q().pack(self.sum))
+      _x = self.sum
+      buff.write(_get_struct_q().pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -206,7 +208,7 @@ class AddTwoIntsResponse(genpy.Message):
       (self.sum,) = _get_struct_q().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 _struct_I = genpy.struct_I
 def _get_struct_I():

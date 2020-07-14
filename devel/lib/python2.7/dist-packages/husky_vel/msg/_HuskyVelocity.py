@@ -9,7 +9,7 @@ import struct
 class HuskyVelocity(genpy.Message):
   _md5sum = "3810a70d8bd9757d7145a2f9707db9e0"
   _type = "husky_vel/HuskyVelocity"
-  _has_header = False #flag to mark the presence of a Header object
+  _has_header = False  # flag to mark the presence of a Header object
   _full_text = """float32 linearVelocityX
 float32 angularVelocityZ
 """
@@ -32,7 +32,7 @@ float32 angularVelocityZ
     """
     if args or kwds:
       super(HuskyVelocity, self).__init__(*args, **kwds)
-      #message fields cannot be None, assign default values for those that are
+      # message fields cannot be None, assign default values for those that are
       if self.linearVelocityX is None:
         self.linearVelocityX = 0.
       if self.angularVelocityZ is None:
@@ -71,7 +71,7 @@ float32 angularVelocityZ
       (_x.linearVelocityX, _x.angularVelocityZ,) = _get_struct_2f().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 
   def serialize_numpy(self, buff, numpy):
@@ -100,7 +100,7 @@ float32 angularVelocityZ
       (_x.linearVelocityX, _x.angularVelocityZ,) = _get_struct_2f().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 _struct_I = genpy.struct_I
 def _get_struct_I():

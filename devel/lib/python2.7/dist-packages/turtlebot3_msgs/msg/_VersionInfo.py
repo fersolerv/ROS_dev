@@ -9,7 +9,7 @@ import struct
 class VersionInfo(genpy.Message):
   _md5sum = "43e0361461af2970a33107409403ef3c"
   _type = "turtlebot3_msgs/VersionInfo"
-  _has_header = False #flag to mark the presence of a Header object
+  _has_header = False  # flag to mark the presence of a Header object
   _full_text = """########################################
 # Messages
 ########################################
@@ -36,7 +36,7 @@ string software   # <major>.<minor>.<patch> : software version of Turtlebot3 ROS
     """
     if args or kwds:
       super(VersionInfo, self).__init__(*args, **kwds)
-      #message fields cannot be None, assign default values for those that are
+      # message fields cannot be None, assign default values for those that are
       if self.hardware is None:
         self.hardware = ''
       if self.firmware is None:
@@ -117,7 +117,7 @@ string software   # <major>.<minor>.<patch> : software version of Turtlebot3 ROS
         self.software = str[start:end]
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 
   def serialize_numpy(self, buff, numpy):
@@ -185,7 +185,7 @@ string software   # <major>.<minor>.<patch> : software version of Turtlebot3 ROS
         self.software = str[start:end]
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 _struct_I = genpy.struct_I
 def _get_struct_I():

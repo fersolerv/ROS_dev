@@ -293,7 +293,7 @@
   <joint name="Wrist3Joint_left" type="revolute">
     <parent link="Wrist2_left"/>
     <child link="Wrist3_left"/>
-    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.09465"/>
+    <origin rpy="0.0 -2.53 0.0" xyz="0.0 0.0 0.09465"/>
     <axis xyz="0 1 0"/>
     <limit effort="28.0" lower="-6.2831853" upper="6.2831853" velocity="3.2"/>
     <dynamics damping="0.0" friction="0.0"/>
@@ -867,12 +867,10 @@
   </joint>
   
   <!--- RIGHT ARM -->
-  <joint name="connector_right" type="revolute">
+  <joint name="connector_right" type="fixed">
     <parent link="base_link"/>
     <child link="Base_right"/>
     <origin rpy="0 2.35619 0" xyz="0.23963 0.0 1.3890"/>
-    <axis xyz="-1 0 0"/>
-    <limit effort="0" lower="0" upper="0" velocity="0"/>
   </joint>
 
   <link name="Base_right">
@@ -1055,7 +1053,7 @@
   <joint name="Wrist3Joint_right" type="revolute">
     <parent link="Wrist2_right"/>
     <child link="Wrist3_right"/>
-    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.09465"/>
+    <origin rpy="0.0 2.53 0.0" xyz="0.0 0.0 0.09465"/>
     <axis xyz="0 1 0"/>
     <limit effort="28.0" lower="-6.2831853" upper="6.2831853" velocity="3.2"/>
     <dynamics damping="0.0" friction="0.0"/>
@@ -1127,11 +1125,11 @@
   </link>
 
   <joint name="joint_8.0_right" type="revolute">
-      <axis xyz="0 0 1"/>
-      <limit effort="1" lower="-0.47" upper="0.47" velocity="1"/>
-      <parent link="Palm_right"/>
-      <child link="Ring_base_right"/>
-      <origin rpy="-0.08726646255 0 0" xyz="0 0.0435 -0.001542"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1" lower="-0.47" upper="0.47" velocity="1"/>
+    <parent link="Palm_right"/>
+    <child link="Ring_base_right"/>
+    <origin rpy="-0.08726646255 0 0" xyz="0 0.0435 -0.001542"/>
   </joint>
 
   <link name="Ring_base_right">
@@ -1167,11 +1165,11 @@
   </link>
 
   <joint name="joint_9.0_right" type="revolute">
-      <limit effort="1" lower="-0.196" upper="1.61" velocity="1"/>
-      <axis xyz="0 1 0"/>
-      <parent link="Ring_base_right"/>
-      <child link="Ring_proximal_right"/>
-      <origin xyz="0 0 0.0164"/>
+    <limit effort="1" lower="-0.196" upper="1.61" velocity="1"/>
+    <axis xyz="0 1 0"/>
+    <parent link="Ring_base_right"/>
+    <child link="Ring_proximal_right"/>
+    <origin xyz="0 0 0.0164"/>
   </joint>
 
   <link name="Ring_distal_right">
@@ -1191,11 +1189,11 @@
   </link>
   
   <joint name="joint_10.0_right" type="revolute">
-      <axis xyz="0 1 0"/>
-      <limit effort="1" lower="-0.174" upper="1.709" velocity="1"/>
-      <parent link="Ring_proximal_right"/>
-      <child link="Ring_distal_right"/>
-      <origin xyz="0 0 0.054"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1" lower="-0.174" upper="1.709" velocity="1"/>
+    <parent link="Ring_proximal_right"/>
+    <child link="Ring_distal_right"/>
+    <origin xyz="0 0 0.054"/>
   </joint>
 
   <link name="Ring_last_right">
@@ -1215,11 +1213,11 @@
   </link>
   
   <joint name="joint_11.0_right" type="revolute">
-      <axis xyz="0 1 0"/>
-      <limit effort="1" lower="-0.227" upper="1.618" velocity="1"/>
-      <parent link="Ring_distal_right"/>
-      <child link="Ring_last_right"/>
-      <origin xyz="0 0 0.0384"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1" lower="-0.227" upper="1.618" velocity="1"/>
+    <parent link="Ring_distal_right"/>
+    <child link="Ring_last_right"/>
+    <origin xyz="0 0 0.0384"/>
   </joint>
 
   <link name="link_11_0_tip_right">
@@ -1248,9 +1246,9 @@
   </link>
   
   <joint name="joint_11_0_tip_right" type="fixed">
-      <parent link="Ring_last_right"/>
-      <child link="link_11_0_tip_right"/>
-      <origin xyz="0 0 0.0267"/>
+    <parent link="Ring_last_right"/>
+    <child link="link_11_0_tip_right"/>
+    <origin xyz="0 0 0.0267"/>
   </joint>
 
   <link name="Medium_base_right">
@@ -1270,11 +1268,11 @@
   </link>
   
   <joint name="joint_4.0_right" type="revolute">
-      <axis xyz="0 0 1"/>
-      <limit effort="1" lower="-0.47" upper="0.47" velocity="1"/>
-      <parent link="Palm_right"/>
-      <child link="Medium_base_right"/>
-      <origin xyz="0 0 0.0007"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1" lower="-0.47" upper="0.47" velocity="1"/>
+    <parent link="Palm_right"/>
+    <child link="Medium_base_right"/>
+    <origin xyz="0 0 0.0007"/>
   </joint>
 
   <link name="Medium_proximal_right">
@@ -1294,11 +1292,11 @@
   </link>
 
   <joint name="joint_5.0_right" type="revolute">
-      <limit effort="1" lower="-0.196" upper="1.61" velocity="1"/>
-      <axis xyz="0 1 0"/>
-      <parent link="Medium_base_right"/>
-      <child link="Medium_proximal_right"/>
-      <origin xyz="0 0 0.0164"/>
+    <limit effort="1" lower="-0.196" upper="1.61" velocity="1"/>
+    <axis xyz="0 1 0"/>
+    <parent link="Medium_base_right"/>
+    <child link="Medium_proximal_right"/>
+    <origin xyz="0 0 0.0164"/>
   </joint>
 
   <link name="Medium_distal_right">
@@ -1318,11 +1316,11 @@
   </link>
 
   <joint name="joint_6.0_right" type="revolute">
-      <axis xyz="0 1 0"/>
-      <limit effort="1" lower="-0.174" upper="1.709" velocity="1"/>
-      <parent link="Medium_proximal_right"/>
-      <child link="Medium_distal_right"/>
-      <origin xyz="0 0 0.054"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1" lower="-0.174" upper="1.709" velocity="1"/>
+    <parent link="Medium_proximal_right"/>
+    <child link="Medium_distal_right"/>
+    <origin xyz="0 0 0.054"/>
   </joint>
 
   <link name="Medium_last_right">
@@ -1342,11 +1340,11 @@
   </link>
 
   <joint name="joint_7.0_right" type="revolute">
-      <axis xyz="0 1 0"/>
-      <limit effort="1" lower="-0.227" upper="1.618" velocity="1"/>
-      <parent link="Medium_distal_right"/>
-      <child link="Medium_last_right"/>
-      <origin xyz="0 0 0.0384"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1" lower="-0.227" upper="1.618" velocity="1"/>
+    <parent link="Medium_distal_right"/>
+    <child link="Medium_last_right"/>
+    <origin xyz="0 0 0.0384"/>
   </joint>
 
   <link name="link_7_0_tip_right">
@@ -1373,9 +1371,9 @@
   </link>
 
   <joint name="joint_7_0_tip_right" type="fixed">
-      <parent link="Medium_last_right"/>
-      <child link="link_7_0_tip_right"/>
-      <origin xyz="0 0 0.0267"/>
+    <parent link="Medium_last_right"/>
+    <child link="link_7_0_tip_right"/>
+    <origin xyz="0 0 0.0267"/>
   </joint>
 
   <link name="Index_base_right">
@@ -1395,11 +1393,11 @@
   </link>
 
   <joint name="joint_0.0_right" type="revolute">
-      <axis xyz="0 0 1"/>
-      <limit effort="1" lower="-0.47" upper="0.47" velocity="1"/>
-      <parent link="Palm_right"/>
-      <child link="Index_base_right"/>
-      <origin rpy="0.08726646255 0 0" xyz="0 -0.0435 -0.001542"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1" lower="-0.47" upper="0.47" velocity="1"/>
+    <parent link="Palm_right"/>
+    <child link="Index_base_right"/>
+    <origin rpy="0.08726646255 0 0" xyz="0 -0.0435 -0.001542"/>
   </joint>
 
   <link name="Index_proximal_right">
@@ -1419,11 +1417,11 @@
   </link>
 
   <joint name="joint_1.0_right" type="revolute">
-      <limit effort="1" lower="-0.196" upper="1.61" velocity="1"/>
-      <axis xyz="0 1 0"/>
-      <parent link="Index_base_right"/>
-      <child link="Index_proximal_right"/>
-      <origin xyz="0 0 0.0164"/>
+    <limit effort="1" lower="-0.196" upper="1.61" velocity="1"/>
+    <axis xyz="0 1 0"/>
+    <parent link="Index_base_right"/>
+    <child link="Index_proximal_right"/>
+    <origin xyz="0 0 0.0164"/>
   </joint>
 
   <link name="Index_distal_right">
@@ -1443,11 +1441,11 @@
   </link>
 
   <joint name="joint_2.0_right" type="revolute">
-      <axis xyz="0 1 0"/>
-      <limit effort="1" lower="-0.174" upper="1.709" velocity="1"/>
-      <parent link="Index_proximal_right"/>
-      <child link="Index_distal_right"/>
-      <origin xyz="0 0 0.054"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1" lower="-0.174" upper="1.709" velocity="1"/>
+    <parent link="Index_proximal_right"/>
+    <child link="Index_distal_right"/>
+    <origin xyz="0 0 0.054"/>
   </joint>
 
   <link name="Index_last_right">
@@ -1467,11 +1465,11 @@
   </link>
 
   <joint name="joint_3.0_right" type="revolute">
-      <axis xyz="0 1 0"/>
-      <limit effort="1" lower="-0.227" upper="1.618" velocity="1"/>
-      <parent link="Index_distal_right"/>
-      <child link="Index_last_right"/>
-      <origin xyz="0 0 0.0384"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1" lower="-0.227" upper="1.618" velocity="1"/>
+    <parent link="Index_distal_right"/>
+    <child link="Index_last_right"/>
+    <origin xyz="0 0 0.0384"/>
   </joint>
 
   <link name="link_3_0_tip_right">
@@ -1498,9 +1496,9 @@
   </link>
 
   <joint name="joint_3_0_tip_right" type="fixed">
-      <parent link="Index_last_right"/>
-      <child link="link_3_0_tip_right"/>
-      <origin xyz="0 0 0.0267"/>
+    <parent link="Index_last_right"/>
+    <child link="link_3_0_tip_right"/>
+    <origin xyz="0 0 0.0267"/>
   </joint>
 
   <link name="Thumb_base_right">
@@ -1520,10 +1518,10 @@
   </link>
 
   <joint name="joint_12.0_right" type="revolute">
-      <axis xyz="-1 0 0"/>
-      <limit effort="1" lower="0.263" upper="1.396" velocity="1"/>
-      <parent link="Palm_right"/>
-      <child link="Thumb_base_right"/>
+    <axis xyz="-1 0 0"/>
+    <limit effort="1" lower="0.263" upper="1.396" velocity="1"/>
+    <parent link="Palm_right"/>
+    <child link="Thumb_base_right"/>
     <origin rpy="0 -1.65806278845 -1.5707963259" xyz="-0.0182 0.019333 -0.045987"/>
   </joint>
 
@@ -1568,11 +1566,11 @@
   </link>
 
   <joint name="joint_14.0_right" type="revolute">
-      <axis xyz="0 1 0"/>
-      <limit effort="1" lower="-0.189" upper="1.644" velocity="1"/>
-      <parent link="Thumb_proximal_right"/>
-      <child link="Thumb_distal_right"/>
-      <origin xyz="0 0 0.0177"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1" lower="-0.189" upper="1.644" velocity="1"/>
+    <parent link="Thumb_proximal_right"/>
+    <child link="Thumb_distal_right"/>
+    <origin xyz="0 0 0.0177"/>
   </joint>
 
   <link name="Thumb_last_right">
@@ -1623,9 +1621,9 @@
   </link>
 
   <joint name="joint_15_0_tip_right" type="fixed">
-      <parent link="Thumb_last_right"/>
-      <child link="link_15_0_tip_right"/>
-      <origin xyz="0 0 0.0423"/>
-  </joint>
+    <parent link="Thumb_last_right"/>
+    <child link="link_15_0_tip_right"/>
+    <origin xyz="0 0 0.0423"/>
+  </joint> -->
 
 </robot>

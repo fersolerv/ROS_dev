@@ -10,7 +10,7 @@ import std_msgs.msg
 class SensorState(genpy.Message):
   _md5sum = "7250c1dc0b61c4190e78f528f599285f"
   _type = "turtlebot3_msgs/SensorState"
-  _has_header = True #flag to mark the presence of a Header object
+  _has_header = True  # flag to mark the presence of a Header object
   _full_text = """########################################
 # CONSTANTS
 ########################################
@@ -102,7 +102,7 @@ string frame_id
     """
     if args or kwds:
       super(SensorState, self).__init__(*args, **kwds)
-      #message fields cannot be None, assign default values for those that are
+      # message fields cannot be None, assign default values for those that are
       if self.header is None:
         self.header = std_msgs.msg.Header()
       if self.bumper is None:
@@ -192,7 +192,7 @@ string frame_id
       self.torque = bool(self.torque)
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 
   def serialize_numpy(self, buff, numpy):
@@ -245,21 +245,21 @@ string frame_id
       self.torque = bool(self.torque)
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_B3f3B2if = None
-def _get_struct_B3f3B2if():
-    global _struct_B3f3B2if
-    if _struct_B3f3B2if is None:
-        _struct_B3f3B2if = struct.Struct("<B3f3B2if")
-    return _struct_B3f3B2if
 _struct_3I = None
 def _get_struct_3I():
     global _struct_3I
     if _struct_3I is None:
         _struct_3I = struct.Struct("<3I")
     return _struct_3I
+_struct_B3f3B2if = None
+def _get_struct_B3f3B2if():
+    global _struct_B3f3B2if
+    if _struct_B3f3B2if is None:
+        _struct_B3f3B2if = struct.Struct("<B3f3B2if")
+    return _struct_B3f3B2if

@@ -3,6 +3,6 @@ prefix=/home/parallels/catkin_ws/devel
 Name: bmm3
 Description: Description of bmm3
 Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+Cflags: -I/home/parallels/catkin_ws/src/bmm3/include
+Libs: -L${prefix}/lib -lbmm3
+Requires: roscpp rospy std_msgs tf nav_msgs geometry_msgs

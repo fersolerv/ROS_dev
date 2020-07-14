@@ -882,6 +882,42 @@ ros_essentials_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/ros_essentials
 //Value Computed by CMake
 ros_essentials_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/ros_essentials
 
+//Value Computed by CMake
+ros_tutorial_service_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/ros_tutorial_service
+
+//Value Computed by CMake
+ros_tutorial_service_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/ros_tutorial_service
+
+//Value Computed by CMake
+ros_tutorials_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/ros_tutorials
+
+//Value Computed by CMake
+ros_tutorials_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/ros_tutorials
+
+//Value Computed by CMake
+ros_tutorials_topic_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/ros_tutorials_topic
+
+//Value Computed by CMake
+ros_tutorials_topic_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/ros_tutorials_topic
+
+//Value Computed by CMake
+rosbot_description_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/rosbot_description/src/rosbot_description
+
+//Value Computed by CMake
+rosbot_description_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/rosbot_description/src/rosbot_description
+
+//Value Computed by CMake
+rosbot_gazebo_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/rosbot_description/src/rosbot_gazebo
+
+//Value Computed by CMake
+rosbot_gazebo_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/rosbot_description/src/rosbot_gazebo
+
+//Value Computed by CMake
+rosbot_navigation_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/rosbot_description/src/rosbot_navigation
+
+//Value Computed by CMake
+rosbot_navigation_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/rosbot_description/src/rosbot_navigation
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
 
@@ -1347,7 +1383,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=24
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

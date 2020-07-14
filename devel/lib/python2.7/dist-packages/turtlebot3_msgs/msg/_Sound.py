@@ -9,7 +9,7 @@ import struct
 class Sound(genpy.Message):
   _md5sum = "e1f8c7f8a9a61383b5734fbdeca2f99a"
   _type = "turtlebot3_msgs/Sound"
-  _has_header = False #flag to mark the presence of a Header object
+  _has_header = False  # flag to mark the presence of a Header object
   _full_text = """########################################
 # CONSTANTS
 ########################################
@@ -52,7 +52,7 @@ uint8 value
     """
     if args or kwds:
       super(Sound, self).__init__(*args, **kwds)
-      #message fields cannot be None, assign default values for those that are
+      # message fields cannot be None, assign default values for those that are
       if self.value is None:
         self.value = 0
     else:
@@ -70,7 +70,8 @@ uint8 value
     :param buff: buffer, ``StringIO``
     """
     try:
-      buff.write(_get_struct_B().pack(self.value))
+      _x = self.value
+      buff.write(_get_struct_B().pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -86,7 +87,7 @@ uint8 value
       (self.value,) = _get_struct_B().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 
   def serialize_numpy(self, buff, numpy):
@@ -96,7 +97,8 @@ uint8 value
     :param numpy: numpy python module
     """
     try:
-      buff.write(_get_struct_B().pack(self.value))
+      _x = self.value
+      buff.write(_get_struct_B().pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -113,7 +115,7 @@ uint8 value
       (self.value,) = _get_struct_B().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 _struct_I = genpy.struct_I
 def _get_struct_I():

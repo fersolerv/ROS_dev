@@ -26,6 +26,7 @@ echo_and_run /usr/bin/env \
     CATKIN_BINARY_DIR="/home/parallels/catkin_ws/build" \
     "/usr/bin/python2" \
     "/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_teleop/setup.py" \
+     \
     build --build-base "/home/parallels/catkin_ws/build/turtlebot3/turtlebot3_teleop" \
     install \
     --root="${DESTDIR-/}" \

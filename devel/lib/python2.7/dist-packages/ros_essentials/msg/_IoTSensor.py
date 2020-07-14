@@ -9,7 +9,7 @@ import struct
 class IoTSensor(genpy.Message):
   _md5sum = "16767b4b63fd3551b69c6c06672a0bf6"
   _type = "ros_essentials/IoTSensor"
-  _has_header = False #flag to mark the presence of a Header object
+  _has_header = False  # flag to mark the presence of a Header object
   _full_text = """int32 id
 string name
 float32 temperature
@@ -33,7 +33,7 @@ float32 humidity"""
     """
     if args or kwds:
       super(IoTSensor, self).__init__(*args, **kwds)
-      #message fields cannot be None, assign default values for those that are
+      # message fields cannot be None, assign default values for those that are
       if self.id is None:
         self.id = 0
       if self.name is None:
@@ -60,7 +60,8 @@ float32 humidity"""
     :param buff: buffer, ``StringIO``
     """
     try:
-      buff.write(_get_struct_i().pack(self.id))
+      _x = self.id
+      buff.write(_get_struct_i().pack(_x))
       _x = self.name
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -97,7 +98,7 @@ float32 humidity"""
       (_x.temperature, _x.humidity,) = _get_struct_2f().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 
   def serialize_numpy(self, buff, numpy):
@@ -107,7 +108,8 @@ float32 humidity"""
     :param numpy: numpy python module
     """
     try:
-      buff.write(_get_struct_i().pack(self.id))
+      _x = self.id
+      buff.write(_get_struct_i().pack(_x))
       _x = self.name
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -145,21 +147,21 @@ float32 humidity"""
       (_x.temperature, _x.humidity,) = _get_struct_2f().unpack(str[start:end])
       return self
     except struct.error as e:
-      raise genpy.DeserializationError(e) #most likely buffer underfill
+      raise genpy.DeserializationError(e)  # most likely buffer underfill
 
 _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_i = None
-def _get_struct_i():
-    global _struct_i
-    if _struct_i is None:
-        _struct_i = struct.Struct("<i")
-    return _struct_i
 _struct_2f = None
 def _get_struct_2f():
     global _struct_2f
     if _struct_2f is None:
         _struct_2f = struct.Struct("<2f")
     return _struct_2f
+_struct_i = None
+def _get_struct_i():
+    global _struct_i
+    if _struct_i is None:
+        _struct_i = struct.Struct("<i")
+    return _struct_i

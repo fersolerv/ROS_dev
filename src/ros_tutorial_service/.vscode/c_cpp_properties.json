@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/parallels/catkin_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/parallels/catkin_ws/src/bmm3/include/**",
+                "/home/parallels/catkin_ws/src/husky_development/husky_vel/include/**",
+                "/home/parallels/catkin_ws/src/ros_essentials/include/**",
+                "/home/parallels/catkin_ws/src/ros_tutorial_service/include/**",
+                "/home/parallels/catkin_ws/src/ros_tutorials/include/**",
+                "/home/parallels/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+                "/home/parallels/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+                "/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_slam/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}
