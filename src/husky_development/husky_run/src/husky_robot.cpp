@@ -24,7 +24,7 @@ int main(int argc, char **argv)
   auto angle = 90.0;
   auto clockwise = 0;
 
-  // husky_cmd->move(speed, distance, isFoward);
+  husky_cmd->move(speed, distance, isFoward);
   // husky_cmd->stop();
   husky_cmd->rotate(husky_cmd->degrees2radians(angular_speed), husky_cmd->degrees2radians(angle), clockwise);
   // husky_cmd->move(speed, distance, isFoward);
@@ -32,7 +32,6 @@ int main(int argc, char **argv)
   // husky_cmd->move(speed, distance, isFoward);
   husky_cmd->rotate(husky_cmd->degrees2radians(angular_speed), husky_cmd->degrees2radians(angle), clockwise);
   // husky_cmd->move(speed, distance, isFoward);
-
   return 0; 
 }
 
