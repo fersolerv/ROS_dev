@@ -1,7 +1,0 @@
-set(husky_teleop_key_SETUP_PY_SETUP_MODULE "distutils.core")
-set(husky_teleop_key_SETUP_PY_VERSION "0.0.0")
-set(husky_teleop_key_SETUP_PY_SCRIPTS "")
-set(husky_teleop_key_SETUP_PY_PACKAGES "husky_teleop_key")
-set(husky_teleop_key_SETUP_PY_PACKAGE_DIRS "src/husky_teleop_key")
-set(husky_teleop_key_SETUP_PY_MODULES "")
-set(husky_teleop_key_SETUP_PY_MODULE_DIRS "")
