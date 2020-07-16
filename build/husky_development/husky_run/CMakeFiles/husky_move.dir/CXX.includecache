@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/parallels/catkin_ws/devel/include/husky_run/HuskyVelocity.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/parallels/catkin_ws/src/husky_development/husky_run/include/husky_controller.hpp
 ros/ros.h
 -
@@ -25,6 +41,8 @@ std_msgs/String.h
 /home/parallels/catkin_ws/src/husky_development/husky_run/src/husky_robot.cpp
 ../include/husky_controller.hpp
 /home/parallels/catkin_ws/src/husky_development/husky_run/include/husky_controller.hpp
+husky_run/HuskyVelocity.h
+/home/parallels/catkin_ws/src/husky_development/husky_run/src/husky_run/HuskyVelocity.h
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string
