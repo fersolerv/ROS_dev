@@ -1,4 +1,5 @@
 #include "../include/husky_controller.hpp"
+#include "husky_run/HuskyVelocity.h"
 
 using namespace std;
 auto husky_cmd = new HuskyController();
@@ -35,7 +36,6 @@ int main(int argc, char **argv)
   // husky_cmd->move(speed, distance, isFoward);
   // husky_cmd->rotate(husky_cmd->degrees2radians(angular_speed), husky_cmd->degrees2radians(angle), clockwise);
   // husky_cmd->move(speed, distance, isFoward);
-
   return 0; 
 }
 
