@@ -136,7 +136,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/parallels/catkin_ws/build/ros_tutorials_topic/cmake_install.cmake")
   include("/home/parallels/catkin_ws/build/ros_tutorial_action/cmake_install.cmake")
   include("/home/parallels/catkin_ws/build/bmm3/cmake_install.cmake")
-  include("/home/parallels/catkin_ws/build/husky_development/husky_vel/cmake_install.cmake")
+  include("/home/parallels/catkin_ws/build/husky_development/husky_run/cmake_install.cmake")
 
 endif()
 
