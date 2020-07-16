@@ -27,6 +27,7 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 include_directories(${EIGEN_INCLUDE_DIRS})
 
 catkin_package(
+  INCLUDE_DIRS include
   LIBRARIES husky_development
   CATKIN_DEPENDS
     geometry_msgs

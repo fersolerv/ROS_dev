@@ -1,2 +1,2 @@
-bmm3:husky_development/husky_run:ros_essentials:ros_tutorial_action:ros_tutorial_service:ros_tutorials_topic
+bmm3:husky_development/husky_run:ros_tutorials/ros_essentials:ros_tutorials/ros_tutorial_action:ros_tutorials/ros_tutorial_service:ros_tutorials/ros_tutorials_topic
 -DCATKIN_DEVEL_PREFIX=/home/parallels/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/parallels/catkin_ws/install -G Unix Makefiles

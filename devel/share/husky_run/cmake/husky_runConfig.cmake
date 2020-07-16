@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(husky_run_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/parallels/catkin_ws/devel/include " STREQUAL " ")
+if(NOT "/home/parallels/catkin_ws/devel/include;/home/parallels/catkin_ws/src/husky_development/husky_run/include " STREQUAL " ")
   set(husky_run_INCLUDE_DIRS "")
-  set(_include_dirs "/home/parallels/catkin_ws/devel/include")
+  set(_include_dirs "/home/parallels/catkin_ws/devel/include;/home/parallels/catkin_ws/src/husky_development/husky_run/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
