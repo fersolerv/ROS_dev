@@ -1,4 +1,5 @@
 #include "../include/husky_controller.hpp"
+#include "husky_run/HuskyVelocity.h"
 
 using namespace std;
 auto husky_cmd = new HuskyController();
