@@ -291,6 +291,18 @@ actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
 
 //Value Computed by CMake
+arm_client_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/arm_client
+
+//Value Computed by CMake
+arm_client_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/arm_client
+
+//Value Computed by CMake
+battery_simulator_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/battery_simulator
+
+//Value Computed by CMake
+battery_simulator_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/battery_simulator
+
+//Value Computed by CMake
 bmm3_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/bmm3
 
 //Value Computed by CMake
@@ -299,8 +311,14 @@ bmm3_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/bmm3
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/melodic/share/diagnostic_msgs/cmake
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/melodic/share/gencpp/cmake
@@ -378,8 +396,11 @@ husky_run_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/husky_development/hu
 //Value Computed by CMake
 husky_run_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/husky_development/husky_run
 
+//The directory containing a CMake configuration file for interactive_markers.
+interactive_markers_DIR:PATH=/opt/ros/melodic/share/interactive_markers/cmake
+
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libtf2.so
+lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -392,6 +413,15 @@ message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
+
+//Value Computed by CMake
+robot_description_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/robot_description
+
+//Value Computed by CMake
+robot_description_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/robot_description
 
 //Value Computed by CMake
 ros_essentials_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/ros_tutorials/ros_essentials
@@ -420,6 +450,9 @@ ros_tutorials_topic_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/ros_tutorial
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
 
+//The directory containing a CMake configuration file for rosconsole_bridge.
+rosconsole_bridge_DIR:PATH=/opt/ros/melodic/share/rosconsole_bridge/cmake
+
 //The directory containing a CMake configuration file for roscpp.
 roscpp_DIR:PATH=/opt/ros/melodic/share/roscpp/cmake
 
@@ -435,6 +468,12 @@ rosgraph_DIR:PATH=/opt/ros/melodic/share/rosgraph/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
 
@@ -443,6 +482,12 @@ rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+smach_example_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/smach_example
+
+//Value Computed by CMake
+smach_example_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/smach_example
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
@@ -461,6 +506,66 @@ tf2_ros_DIR:PATH=/opt/ros/melodic/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
+
+//Value Computed by CMake
+turtlebot3_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/turtlebot3
+
+//Value Computed by CMake
+turtlebot3_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3
+
+//Value Computed by CMake
+turtlebot3_bringup_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/turtlebot3_bringup
+
+//Value Computed by CMake
+turtlebot3_bringup_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_bringup
+
+//Value Computed by CMake
+turtlebot3_description_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/turtlebot3_description
+
+//Value Computed by CMake
+turtlebot3_description_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_description
+
+//Value Computed by CMake
+turtlebot3_example_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/turtlebot3_example
+
+//Value Computed by CMake
+turtlebot3_example_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_example
+
+//Value Computed by CMake
+turtlebot3_msgs_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/turtlebot3_msgs
+
+//The directory containing a CMake configuration file for turtlebot3_msgs.
+turtlebot3_msgs_DIR:PATH=/home/parallels/catkin_ws/devel/share/turtlebot3_msgs/cmake
+
+//Value Computed by CMake
+turtlebot3_msgs_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_msgs
+
+//Value Computed by CMake
+turtlebot3_navigation_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/turtlebot3_navigation
+
+//Value Computed by CMake
+turtlebot3_navigation_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_navigation
+
+//Value Computed by CMake
+turtlebot3_slam_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/turtlebot3_slam
+
+//Value Computed by CMake
+turtlebot3_slam_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_slam
+
+//Value Computed by CMake
+turtlebot3_teleop_BINARY_DIR:STATIC=/home/parallels/catkin_ws/build/turtlebot3/turtlebot3_teleop
+
+//Value Computed by CMake
+turtlebot3_teleop_SOURCE_DIR:STATIC=/home/parallels/catkin_ws/src/turtlebot3/turtlebot3_teleop
+
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake
+
+//The directory containing a CMake configuration file for visualization_msgs.
+visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
+
+//The directory containing a CMake configuration file for xacro.
+xacro_DIR:PATH=/opt/ros/melodic/share/xacro/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
@@ -575,7 +680,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

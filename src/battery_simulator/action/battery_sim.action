@@ -1,0 +1,8 @@
+#goal
+bool charge_state
+---
+#result
+string battery_status
+---
+#feedback
+float32 battery_percentage
