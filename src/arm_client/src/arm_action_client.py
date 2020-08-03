@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-
 import rospy
 import actionlib
 from std_msgs.msg import Float64
@@ -16,6 +15,7 @@ def move_joint(angles):
     client.send_goal_and_wait(goal)
 
 if __name__ == '__main__':
+    
     rospy.init_node('joint_position_tester')
     client = actionlib.SimpleActionClient('arm_controller/follow_joint_trajectory', FollowJointTrajectoryAction)
     client.wait_for_server()
